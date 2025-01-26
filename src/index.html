@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Form</title>
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <main>
+        <section class="feedback">
+            <div class="feedback__wrapper content_wrapper">
+                <h1 class="feedback__header">Необходима обратная связь?</h1>
+                <p class="feedback__description">
+                    Оставьте заявку на сайте, наш специалист свяжется с вами и
+                    проконсультирует по всем вопросам.
+                </p>
+                <form class="feedback__form form" id="feedbackForm">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" />
+                    <div class="form__error-message" id="error_name"></div>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" />
+                    <div class="form__error-message" id="error_email"></div>
+
+                    <label for="phone">Телефон</label>
+                    <input type="text" id="phone" name="phone" />
+                    <div class="form__error-message" id="error_phone"></div>
+
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message"></textarea>
+                    <div class="form__error-message" id="error_message"></div>
+
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="modal">
+            <div class="modal__wrapper content_wrapper">
+                <button class="modal__open-btn" id="openModal">
+                    Открыть модальное окно
+                </button>
+                <div class="modal__bg hidden" id="modal">
+                    <div class="modal__content">
+                        <p>Текст модального окна</p>
+                        <button id="closeModal" class="modal__close-btn">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="bundle.js"></script>
+
+</html>
