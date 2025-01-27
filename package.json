@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "dev": "webpack serve --mode development" 
+    "dev": "webpack serve --mode development"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +26,8 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.0"
+  },
+  "dependencies": {
+    "inputmask": "^5.0.9"
   }
 }
